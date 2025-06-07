@@ -45,7 +45,7 @@ const Contact = () => {
         </div>
         <div className="contact_us_right">
           <h4>Write Us</h4>
-          <form>
+          <form className="contact_form">
             <div className="form-group">
               <p>Name <span>*</span></p>
               <input type="text" className="form-control" placeholder="Enter your name" required />
