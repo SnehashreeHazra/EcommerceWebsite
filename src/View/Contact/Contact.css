@@ -110,3 +110,43 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+@media (max-width:999px) {
+  .contact_us_content{
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+  .contact_us_left{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .contact_us_right{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .contact_us_heading{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  .contact_info_order{
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .contact_info_div{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .order_info_div{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .contact_us_right{
+    padding: 50px 10px;
+  }
+}
