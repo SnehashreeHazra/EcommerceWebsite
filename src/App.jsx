@@ -14,6 +14,7 @@ import NewPassword from './View/Authentication/ForgotPassword/NewPassword'
 import MyOrders from './View/MyOrders/MyOrders'
 import Profile from './View/Profile/Profile'
 import Contact from './View/Contact/Contact'
+import AboutUs from './View/AboutUs/AboutUs'
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Mainlayout/>}>
           <Route path='' element={<Home/>}/>
+          <Route path='/about-us' element={<AboutUs />} />
           <Route path='/products' element={<Products/>} />
           <Route path='/single-product' element={<SingleProduct/>}/>
           <Route path='/my-orders' element={<MyOrders />} />

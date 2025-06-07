@@ -50,7 +50,7 @@ const Header = () => {
                 <NavLink>BestSellers</NavLink>
                 <NavLink>NEW ARRIVALS</NavLink>
                 <NavLink>COLLECTIONS</NavLink>
-                <NavLink>ABOUT US</NavLink>
+                <NavLink to="/about-us">ABOUT US</NavLink>
                 <NavLink to="/contact">CONTACT</NavLink>
             </div>
             <div className='nav_cart_login_div'>
