@@ -59,8 +59,8 @@ const Contact = () => {
               <input type="text" className="form-control" placeholder="+91 123456789" />
             </div>
             <div className="form-group">
-              <p>What's on your mind?<span>*</span></p>
-              <input type="text" className="form-control"  required />
+              <p>What's on your mind? <span>*</span></p>
+              <textarea className="form-control" placeholder="Write your message here..." required></textarea>
             </div>
           </form>
         </div>

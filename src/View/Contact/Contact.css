@@ -84,3 +84,15 @@
 }.contact_form{
   margin-top: 20px;
 }
+.form-group p{
+  margin-bottom: 5px;
+  margin-top: 20px;
+  color: #000;
+  font-weight: 500;
+}
+.form-group p span{
+  color: red;
+}
+.form_input{
+  height: 50px;
+}
