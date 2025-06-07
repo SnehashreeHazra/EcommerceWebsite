@@ -1,0 +1,157 @@
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.mini-info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: #585454;
+  text-align: right;
+}
+
+.order {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.order-content1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.order-content2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.order-content3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.order-cond {
+  background-color: #1c9a1a;
+  padding: 5px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.order-cond-shipped {
+  background-color: #edb016;
+  padding: 5px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.order-cond-cancel {
+  background-color: #ec300e;
+  padding: 5px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.rate-order {
+  color: #25127b;
+  font-size: 14px;
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+.rate-order i {
+  color: #25127b;
+  font-size: 13px;
+}
+.order-purchasing-time {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  color: #585454;
+}
+.order-price {
+  font-size: 14px;
+  color: #585454;
+}
+.order-price span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.order-content3-one {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.order-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.order-name {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.order-desc {
+  color: #585454;
+}
+.order-content3 img {
+  width: 130px;
+}
+.order-details-btn {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  color: #585454;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media (max-width:700px){
+  .order-content2{
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .order-content3{
+    flex-wrap: wrap;
+    row-gap: 10px;
+    
+  }
+  .mini-info{
+    text-align: left;
+  }
+}
+
+@media (max-width:500px){
+  .order-purchasing-time{
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+  .order-content3-one{
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+  .order-content3 img{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media (max-width:400px){
+  .order-content1{
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .order-name{
+    font-size: 18px;
+  }
+  .order-desc{
+    font-size: 13px;
+  }
+}

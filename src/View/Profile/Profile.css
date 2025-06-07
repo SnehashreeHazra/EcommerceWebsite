@@ -1,0 +1,161 @@
+.profile-page{
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+
+.profile-header{
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.profile-header h3{
+  color: #000;
+  font-weight: 600;
+}
+.profile-header button{
+  padding: 8px 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.prfile-content{
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-content-left{
+  width: 100%;
+  max-width: 30%;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.personal-info-heading{
+  font-weight: 600;
+}
+.profile-content-left img{
+  width: 150px;
+}
+.profile-owner{
+  margin: 10px;
+  color: #000;
+  font-weight: 600;
+}
+.owner-email{
+  color: #585454;
+  font-size: 15px;
+  font-weight: 500;
+}
+.personal-info-div{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: start;
+  margin-top: 30px;
+}
+.personal-info{
+  cursor: pointer;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+}
+.personal-info.active{
+  color: #ff4d4d; 
+  font-weight: 500;
+}
+.personal-info-option1.active {
+  color: #ff4d4d !important; 
+  font-weight: 600;
+  /* border-bottom: 2px solid #ff4d4d; */
+}
+.personal-info-subheading{
+  color: #585454;
+  margin-top: 10px;
+}
+.personal-info-option1{
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+
+.profile-content-right{
+  width: 100%;
+  max-width: 65%;
+  min-width: 65%;
+}
+
+.personal-info-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  row-gap: 20px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.personal-information-div{
+  width: 100%;
+  max-width: 30%;
+  min-width: 30%;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.personal-info1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.personal-info2{
+  color: #585454;
+}
+
+@media (max-width:1280px){
+  .personal-information-div{
+        width: 100%;
+    max-width: 45%;
+    min-width: 45%;
+  }
+}
+
+@media (max-width:820px){
+  .prfile-content{
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .profile-content-left{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .profile-content-right{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .personal-info-div{
+    flex-direction: row;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+  .personal-info-heading{
+    text-align: center;
+  }
+}
+
+@media (max-width:550px){
+  .personal-information-div{
+        width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
