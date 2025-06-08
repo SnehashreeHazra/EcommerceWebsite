@@ -6,7 +6,9 @@ const AboutUs = () => {
     <>
       <div className="universal_container about_us_container">
         <h2 className="about_us_heading">ABOUT US</h2>
-        <p className="about_us_subheading">A saree speaks without words — what does yours say?</p>
+        <p className="about_us_subheading">
+          A saree speaks without words — what does yours say?
+        </p>
         <p className="about_us_text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro rerum,
           expedita iusto explicabo exercitationem soluta, vel pariatur beatae
