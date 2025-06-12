@@ -14,42 +14,41 @@
   align-items: center;
   row-gap: 10px;
 }
-.shipping_div1 i{
+.shipping_div1 i {
   font-size: 30px;
   color: #000;
 }
-.about_us_container{
+.about_us_container {
   text-align: center;
   margin-bottom: 20px;
 }
-.about_us_heading{
+.about_us_heading {
   margin: 30px 0px;
   letter-spacing: 2.6px;
 }
-.about_us_subheading{
+.about_us_subheading {
   font-size: 20px;
   color: #000;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2.6px;
 }
-.about_us_text{
+.about_us_text {
   margin-top: 20px;
 }
 
-
-@media (max-width:600px){
-  .shipping_div1 i{
+@media (max-width: 600px) {
+  .shipping_div1 i {
     font-size: 20px;
   }
-  .shipping_div1 p{
+  .shipping_div1 p {
     font-size: 14px;
   }
-  .shipping_container{
+  .shipping_container {
     flex-wrap: wrap;
     row-gap: 20px;
   }
-  .shipping_div1{
+  .shipping_div1 {
     width: 100%;
     max-width: 100%;
     min-width: 100%;
