@@ -94,8 +94,7 @@ const Register = () => {
               </div>
 
               <p className="login-link">
-                Already have an account ?{" "}
-                <NavLink to="/login">Login</NavLink>
+                Already have an account ? <NavLink to="/login">Login</NavLink>
               </p>
             </form>
           </div>
