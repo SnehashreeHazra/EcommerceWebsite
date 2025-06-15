@@ -1,10 +1,8 @@
 import React from "react";
 
 const FilterProducts = () => {
-  
   return (
-    <div className="filter-products" >
-
+    <div className="filter-products">
       {/* {isMobile && showSidebar && (
         <div style={{ textAlign: "right" }}>
           <button onClick={onClose} style={{ border: "none", background: "none", fontSize: "20px" }}>
@@ -15,34 +13,33 @@ const FilterProducts = () => {
       <h4>Filter Options</h4>
 
       {/* Saree Category Filter */}
-<div className="category">
-  <h5>Saree Category</h5>
-  <div className="category-div">
-    <input type="checkbox" id="banarasi" />
-    <label htmlFor="banarasi">Jamdani Suit</label>
-  </div>
-  <div className="category-div">
-    <input type="checkbox" id="kanjeevaram" />
-    <label htmlFor="kanjeevaram">Handloom Jamdani</label>
-  </div>
-  <div className="category-div">
-    <input type="checkbox" id="cottonSaree" />
-    <label htmlFor="cottonSaree">Kantha Silk</label>
-  </div>
-  <div className="category-div">
-    <input type="checkbox" id="silkSaree" />
-    <label htmlFor="silkSaree">Handloom Print</label>
-  </div>
-  <div className="category-div">
-    <input type="checkbox" id="chiffonSaree" />
-    <label htmlFor="chiffonSaree">Chiffon Saree</label>
-  </div>
-  <div className="category-div">
-    <input type="checkbox" id="linenSaree" />
-    <label htmlFor="linenSaree">Chikankari</label>
-  </div>
-</div>
-
+      <div className="category">
+        <h5>Saree Category</h5>
+        <div className="category-div">
+          <input type="checkbox" id="banarasi" />
+          <label htmlFor="banarasi">Jamdani Suit</label>
+        </div>
+        <div className="category-div">
+          <input type="checkbox" id="kanjeevaram" />
+          <label htmlFor="kanjeevaram">Handloom Jamdani</label>
+        </div>
+        <div className="category-div">
+          <input type="checkbox" id="cottonSaree" />
+          <label htmlFor="cottonSaree">Kantha Silk</label>
+        </div>
+        <div className="category-div">
+          <input type="checkbox" id="silkSaree" />
+          <label htmlFor="silkSaree">Handloom Print</label>
+        </div>
+        <div className="category-div">
+          <input type="checkbox" id="chiffonSaree" />
+          <label htmlFor="chiffonSaree">Chiffon Saree</label>
+        </div>
+        <div className="category-div">
+          <input type="checkbox" id="linenSaree" />
+          <label htmlFor="linenSaree">Chikankari</label>
+        </div>
+      </div>
 
       {/* Price Filter */}
       <div className="category">
