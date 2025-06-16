@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import productImg1 from "../../assets/15_eb25a63f-696b-4f4b-abd8-45f975244e7f.webp";
+import productImg1 from "../../assets/DSC06419.webp";
 import productImg2 from "../../assets/211.webp";
 import productImg3 from "../../assets/my-secretly-passed-notes-in-class-630375_700x700.webp";
 import productImg4 from "../../assets/gcmomocosa21-_282_29.webp";
