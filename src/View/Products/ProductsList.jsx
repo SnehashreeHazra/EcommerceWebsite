@@ -43,7 +43,7 @@ const ProductsList = () => {
     {
       img: productImg1,
       img1: prodImg1,
-      category: "Sarees",
+      category: "Saree",
       rating: 4.9,
       name: "Kanchipuram Silk Saree",
       price: 195.0,
