@@ -61,7 +61,7 @@ const ProductsList = () => {
     {
       img: productImg2,
       img1: prodImg1,
-      category: "Sarees",
+      category: "Saree",
       rating: 4.8,
       name: "Banarasi Zari Saree",
       price: 185.0,
