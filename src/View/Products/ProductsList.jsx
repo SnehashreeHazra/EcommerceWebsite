@@ -55,7 +55,7 @@ const ProductsList = () => {
       category: "Sarees",
       rating: 4.9,
       name: "Kanchipuram Silk Saree",
-      price: 195.0,
+      price: 195.2,
       oldPrice: 260.0,
     },
     {
