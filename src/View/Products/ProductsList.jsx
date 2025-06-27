@@ -18,7 +18,7 @@ const ProductsList = () => {
       img1: prodImg1,
       category: "Sarees",
       rating: 4.9,
-      name: "Elegant Silk Saree",
+      name: "Elegant Silk Sarees",
       price: 165.0,
       oldPrice: 220.0,
     },
