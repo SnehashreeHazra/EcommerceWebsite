@@ -36,7 +36,7 @@ const ProductsList = () => {
       img1: prodImg1,
       category: "Saree",
       rating: 4.9,
-      name: "Chiffon Party Saree",
+      name: "Chiffon Party Sarees",
       price: 135.0,
       oldPrice: 180.0,
     },
