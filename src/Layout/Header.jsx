@@ -62,7 +62,7 @@ const Header = () => {
                   className="nested_drowdown_div"
                   onMouseLeave={() => setToggle({ saree: false })}
                 >
-                  <div className="dropdown_item">Kantha Saree</div>
+                  <div className="dropdown_item">Kantha Sarees</div>
                   <div className="dropdown_item">Handloom Cotton Sarees</div>
                   <div className="dropdown_item">Jamdani Sarees</div>
                   <div className="dropdown_item">Kantha Silk Sarees</div>
