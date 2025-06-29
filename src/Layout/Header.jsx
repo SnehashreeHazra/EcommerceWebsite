@@ -65,7 +65,7 @@ const Header = () => {
                   <div className="dropdown_item">Kantha Saree</div>
                   <div className="dropdown_item">Handloom Cotton Sarees</div>
                   <div className="dropdown_item">Jamdani Saree</div>
-                  <div className="dropdown_item">Kantha Silk Saree</div>
+                  <div className="dropdown_item">Kantha Silk Sarees</div>
                 </div>
               )}
             </div>
