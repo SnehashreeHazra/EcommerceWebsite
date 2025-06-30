@@ -10,6 +10,8 @@ import RelatedProducts from "./RelatedProducts";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 const SingleProduct = () => {
+  const [count, setCount] = useState(0);
+
   const { id } = useParams();
   useEffect(() => {
     console.log("Dynamic Product ID:", id); // You can now fetch data using this id
@@ -17,9 +19,9 @@ const SingleProduct = () => {
   }, [id]);
   const navigate = useNavigate();
   const { state } = useLocation();
-  const product = state?.product;
 
-  const [imgUrl, setimgUrl] = useState(product?.img1 || img);
+  const [imgUrl, setimgUrl] = useState(state?.img1 || img);
+  const smallImages = [state?.img1, state?.img2, state?.img1, state?.img2];
 
   const [position, setposition] = useState({
     x: 0,
@@ -45,7 +47,7 @@ const SingleProduct = () => {
 
   return (
     <>
-      {!product ? (
+      {!state?.img1 ? (
         <div className="universal_container" style={{ padding: "100px 0" }}>
           <h2>Product not found. Please go back to the homepage.</h2>
           <button onClick={() => navigate("/")}>Go Home</button>
@@ -72,18 +74,15 @@ const SingleProduct = () => {
                 />
               </div>
               <div className="single_product_small_images_wrapper">
-                {[img, img2, img3, img].map((e, i) => {
-                  return (
-                    <>
-                      <div
-                        onClick={() => setimgUrl(e)}
-                        className="single_product_small_img"
-                      >
-                        <img src={e} />
-                      </div>
-                    </>
-                  );
-                })}
+                {smallImages.map((e, i) => (
+                  <div
+                    key={i}
+                    onClick={() => setimgUrl(e)}
+                    className="single_product_small_img"
+                  >
+                    <img src={e} />
+                  </div>
+                ))}
               </div>
             </div>
             <div className="single_product_right">
