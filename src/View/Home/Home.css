@@ -189,6 +189,7 @@
 .spotlight_card {
   width: 24%;
   box-shadow: 0px 4px 100px #00000026;
+  cursor: pointer;
 }
 
 .spotlight_img_div {

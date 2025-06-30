@@ -33,7 +33,7 @@ const ArrivalProduct = () => {
         return (
           <>
             <div
-              onClick={() => navigate("/single-product")}
+              onClick={() => navigate(`/single-product/${i}`, {state: {img1: e.img1, img2: e.img2, }})}
               className="spotlight_card"
             >
               <div

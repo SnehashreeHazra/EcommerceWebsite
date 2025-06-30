@@ -7,11 +7,20 @@ import SpotlightCard from "../Home/SpotlightCard";
 import InSpotlight from "../Home/InSpotlight";
 import SingleProductDescription from "./SingleProductDescription";
 import RelatedProducts from "./RelatedProducts";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 const SingleProduct = () => {
+  const { id } = useParams();
+  useEffect(() => {
+    console.log("Dynamic Product ID:", id); // You can now fetch data using this id
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [id]);
   const navigate = useNavigate();
-  const [imgUrl, setimgUrl] = useState(img);
+  const { state } = useLocation();
+  const product = state?.product;
+
+  const [imgUrl, setimgUrl] = useState(product?.img1 || img);
+
   const [position, setposition] = useState({
     x: 0,
     y: 0,
@@ -33,85 +42,89 @@ const SingleProduct = () => {
       scale: 1,
     });
   };
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, []);
-  const [count, setCount] = useState(0);
+
   return (
     <>
-      <div className="single_product_wrapper universal_container">
-        <div className="single_product_left">
-          <div
-            onMouseMove={(e) => mouseEnterZoom(e)}
-            onMouseLeave={() => mouseLeaveZoom()}
-            className="single_product_img_div"
-          >
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                transformOrigin: `${position.x}px ${position.y}px`,
-                transform: `scale(${position.scale})`,
-                overflow: "hidden",
-              }}
-              src={imgUrl}
-            />
-          </div>
-          <div className="single_product_small_images_wrapper">
-            {[img, img2, img3, img].map((e, i) => {
-              return (
-                <>
-                  <div
-                    onClick={() => setimgUrl(e)}
-                    className="single_product_small_img"
-                  >
-                    <img src={e} />
-                  </div>
-                </>
-              );
-            })}
-          </div>
+      {!product ? (
+        <div className="universal_container" style={{ padding: "100px 0" }}>
+          <h2>Product not found. Please go back to the homepage.</h2>
+          <button onClick={() => navigate("/")}>Go Home</button>
         </div>
-        <div className="single_product_right">
-          <p className="saree_para">Saree</p>
-          <h1 className="product_name85685">Brown Saree</h1>
-          <div className="single_product_rating_wrapper">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <div className="single_product_rates">4.8 (245) Reviews</div>
-          </div>
-          <div className="single_product_price_div">
-            <p className="current_price">₹1,500.00</p>
-            <p className="discounted_price">₹3,500.00 </p>
-            <small
-              style={{
-                color: "green",
-                fontWeight: "600",
-                fontSize: "15px",
-              }}
-            >
-              70% Off
-            </small>
-          </div>
-          <p className="instock_para">In Stock</p>
-          <div
-            className="lorem_text_div"
-            style={{
-              width: "81%",
-            }}
-          >
-            <p className="lorem_text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
-            </p>
-          </div>
+      ) : (
+        <>
+          <div className="single_product_wrapper universal_container">
+            <div className="single_product_left">
+              <div
+                onMouseMove={(e) => mouseEnterZoom(e)}
+                onMouseLeave={() => mouseLeaveZoom()}
+                className="single_product_img_div"
+              >
+                <img
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    transformOrigin: `${position.x}px ${position.y}px`,
+                    transform: `scale(${position.scale})`,
+                    overflow: "hidden",
+                  }}
+                  src={imgUrl}
+                />
+              </div>
+              <div className="single_product_small_images_wrapper">
+                {[img, img2, img3, img].map((e, i) => {
+                  return (
+                    <>
+                      <div
+                        onClick={() => setimgUrl(e)}
+                        className="single_product_small_img"
+                      >
+                        <img src={e} />
+                      </div>
+                    </>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="single_product_right">
+              <p className="saree_para">Saree</p>
+              <h1 className="product_name85685">Brown Saree</h1>
+              <div className="single_product_rating_wrapper">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div className="single_product_rates">4.8 (245) Reviews</div>
+              </div>
+              <div className="single_product_price_div">
+                <p className="current_price">₹1,500.00</p>
+                <p className="discounted_price">₹3,500.00 </p>
+                <small
+                  style={{
+                    color: "green",
+                    fontWeight: "600",
+                    fontSize: "15px",
+                  }}
+                >
+                  70% Off
+                </small>
+              </div>
+              <p className="instock_para">In Stock</p>
+              <div
+                className="lorem_text_div"
+                style={{
+                  width: "81%",
+                }}
+              >
+                <p className="lorem_text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
 
-          {/* <div className='single_product_color_wrapper'>
+              {/* <div className='single_product_color_wrapper'>
             <p className='color_para'>Color: <span>Brown</span></p>
             <div className='color_box_wrapper'>
             {['brown','#453c35','#baae8a','lightgreen'].map((e,i)=>{
@@ -131,19 +144,19 @@ const SingleProduct = () => {
             </div>
            </div> */}
 
-          <div className="pinCode_wrapper">
-            <input placeholder="Enter delivery pincode " />
-            <p>Check</p>
-          </div>
+              <div className="pinCode_wrapper">
+                <input placeholder="Enter delivery pincode " />
+                <p>Check</p>
+              </div>
 
-          <div>
-            <p className="delivery_para">
-              Delivery by 15 May, Thursday | <span>Free</span> ₹40
-            </p>
-            <p className="order_para">if ordered before 1:59 PM</p>
-          </div>
+              <div>
+                <p className="delivery_para">
+                  Delivery by 15 May, Thursday | <span>Free</span> ₹40
+                </p>
+                <p className="order_para">if ordered before 1:59 PM</p>
+              </div>
 
-          {/* <div className='single_product_size_wrapper'>
+              {/* <div className='single_product_size_wrapper'>
            <p className='color_para'>Size: <span>2XL</span></p>
            <div className='single_product_all_size_wrapper'>
             <div className='single_product_size'>S</div>
@@ -155,56 +168,61 @@ const SingleProduct = () => {
             <div className='single_product_size'>4XL</div>
            </div>
            </div> */}
-          {/* <p className='size_guide_para'>View Size Guide </p> */}
-          <div className="quantiy_add_to_cart_wrapper">
-            <div className="plus_minus_wrapper">
-              <div
-                className="count_plus"
-                onClick={() => {
-                  setCount(count + 1);
-                }}
-              >
-                {" "}
-                +{" "}
+              {/* <p className='size_guide_para'>View Size Guide </p> */}
+              <div className="quantiy_add_to_cart_wrapper">
+                <div className="plus_minus_wrapper">
+                  <div
+                    className="count_plus"
+                    onClick={() => {
+                      setCount(count + 1);
+                    }}
+                  >
+                    {" "}
+                    +{" "}
+                  </div>
+                  <div className="count_div">{count}</div>
+                  <div
+                    className="count_minus"
+                    onClick={() => {
+                      if (count <= 0) {
+                        setCount(0);
+                      } else {
+                        setCount(count - 1);
+                      }
+                    }}
+                  >
+                    {" "}
+                    -{" "}
+                  </div>
+                </div>
+                <button
+                  className="buy_now_btn"
+                  onClick={() => navigate("/cart")}
+                >
+                  Buy Now
+                </button>
+                <button
+                  className="add_to_cart_btn"
+                  onClick={() => navigate("/cart")}
+                >
+                  Add To Cart
+                </button>
               </div>
-              <div className="count_div">{count}</div>
-              <div
-                className="count_minus"
-                onClick={() => {
-                  if (count <= 0) {
-                    setCount(0);
-                  } else {
-                    setCount(count - 1);
-                  }
-                }}
-              >
-                {" "}
-                -{" "}
+
+              <div className="category_tags_SKU_wrapper">
+                <p className="tags_para">
+                  SKU:<span>GHFT8A8D6952</span>
+                </p>
+                <p className="tags_para">
+                  Tags:<span>Women, Saree, Fashion, Modern</span>
+                </p>
               </div>
             </div>
-            <button className="buy_now_btn" onClick={() => navigate("/cart")}>
-              Buy Now
-            </button>
-            <button
-              className="add_to_cart_btn"
-              onClick={() => navigate("/cart")}
-            >
-              Add To Cart
-            </button>
           </div>
-
-          <div className="category_tags_SKU_wrapper">
-            <p className="tags_para">
-              SKU:<span>GHFT8A8D6952</span>
-            </p>
-            <p className="tags_para">
-              Tags:<span>Women, Saree, Fashion, Modern</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <SingleProductDescription />
-      <RelatedProducts />
+          <SingleProductDescription />
+          <RelatedProducts />
+        </>
+      )}
     </>
   );
 };
