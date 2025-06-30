@@ -7,7 +7,7 @@ import HomeParallax from "./HomeParallax";
 import Quality from "./Quality";
 import Testimonial from "./Testimonial";
 import Footer from "../../Layout/Footer";
-import NewArrivals from "./NewArrivals";
+import NewArrivals from "./NewArrivals.jsx";
 const Home = () => {
   return (
     <>

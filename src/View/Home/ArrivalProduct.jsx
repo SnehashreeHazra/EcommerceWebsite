@@ -43,7 +43,7 @@ const ArrivalProduct = () => {
           >
             <img
               src={index === i && hover ? e.img2 : e.img1}
-              alt={`saree-${i}`}
+              alt=""
             />
           </div>
           <div className="spotlight_product_details">
