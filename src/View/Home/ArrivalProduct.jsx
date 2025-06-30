@@ -33,11 +33,11 @@ const ArrivalProduct = () => {
         return (
           <>
             <div
-              onClick={() =>
-                navigate(`/single-product/${i}`, {
-                  state: { img1: e.img1, img2: e.img2 },
-                })
-              }
+              onClick={() => {
+                const data = { img1: e.img1, img2: e.img2 };
+                localStorage.setItem("selectedProduct", JSON.stringify(data));
+                navigate(`/single-product/${i}`, { state: data });
+              }}
               className="spotlight_card"
             >
               <div
