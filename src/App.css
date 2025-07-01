@@ -116,6 +116,9 @@ p {
   justify-content: space-between;
   align-items: center;
   column-gap: 30px;
+  width: 100%;
+  max-width: 70%;
+  min-width: 70%;
 }
 .nav_link_div a {
   text-decoration: none;

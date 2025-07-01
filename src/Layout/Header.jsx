@@ -69,11 +69,11 @@ const Header = () => {
                 </div>
               )}
             </div>
-            <NavLink>SALE</NavLink>
+            {/* <NavLink>SALE</NavLink> */}
             <NavLink to="/products">Products</NavLink>
             <NavLink>BestSellers</NavLink>
             <NavLink>NEW ARRIVALS</NavLink>
-            <NavLink>COLLECTIONS</NavLink>
+            {/* <NavLink>COLLECTIONS</NavLink> */}
             <NavLink to="/about-us">ABOUT US</NavLink>
             <NavLink to="/contact">CONTACT</NavLink>
           </div>
