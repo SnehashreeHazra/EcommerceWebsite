@@ -102,14 +102,17 @@ const SingleProduct = () => {
           <div className="single_product_price_div">
             <p className="current_price">₹1,500.00</p>
             <p className="discounted_price">₹3,500.00</p>
-            <small style={{ color: "green", fontWeight: 600, fontSize: "15px" }}>
+            <small
+              style={{ color: "green", fontWeight: 600, fontSize: "15px" }}
+            >
               70% Off
             </small>
           </div>
 
           <p className="instock_para">In Stock</p>
           <p className="lorem_text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
           </p>
 
           <div className="pinCode_wrapper">
@@ -124,26 +127,36 @@ const SingleProduct = () => {
 
           <div className="quantiy_add_to_cart_wrapper">
             <div className="plus_minus_wrapper">
-              <div className="count_plus" onClick={() => setCount(count + 1)}> + </div>
+              <div className="count_plus" onClick={() => setCount(count + 1)}>
+                {" "}
+                +{" "}
+              </div>
               <div className="count_div">{count}</div>
               <div
                 className="count_minus"
                 onClick={() => setCount(count > 0 ? count - 1 : 0)}
               >
-                - 
+                -
               </div>
             </div>
             <button className="buy_now_btn" onClick={() => navigate("/cart")}>
               Buy Now
             </button>
-            <button className="add_to_cart_btn" onClick={() => navigate("/cart")}>
+            <button
+              className="add_to_cart_btn"
+              onClick={() => navigate("/cart")}
+            >
               Add To Cart
             </button>
           </div>
 
           <div className="category_tags_SKU_wrapper">
-            <p className="tags_para">SKU:<span>GHFT8A8D6952</span></p>
-            <p className="tags_para">Tags:<span>Women, Saree, Fashion, Modern</span></p>
+            <p className="tags_para">
+              SKU:<span>GHFT8A8D6952</span>
+            </p>
+            <p className="tags_para">
+              Tags:<span>Women, Saree, Fashion, Modern</span>
+            </p>
           </div>
         </div>
       </div>
