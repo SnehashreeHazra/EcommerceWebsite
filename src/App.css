@@ -21,6 +21,10 @@ p {
   margin-left: 0px;
   margin-right: 0px;
 }
+html {
+  scroll-padding-top: 80px; /* Adjust according to your header height */
+}
+
 .universal_container {
   width: 90%;
   margin-inline: auto;
@@ -29,6 +33,7 @@ p {
   width: 80%;
   margin-inline: auto;
 }
+
 .header_top {
   padding: 10px 0px;
   background-color: black;
