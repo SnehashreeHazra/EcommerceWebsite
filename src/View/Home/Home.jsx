@@ -10,7 +10,7 @@ import Footer from "../../Layout/Footer";
 import NewArrivals from "./NewArrivals.jsx";
 import { useLocation } from "react-router-dom";
 const Home = () => {
-   const newArrivalsRef = useRef(null);
+  const newArrivalsRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
