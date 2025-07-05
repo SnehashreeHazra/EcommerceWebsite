@@ -83,12 +83,12 @@ const Footer = () => {
                     <li>
                       <a href="#">Home</a>
                     </li>
-                    <li>
-                      {/* <a href="#">Women</a> */}
-                    </li>
-                    <li>
-                      {/* <a href="#">Sale</a> */}
-                    </li>
+                    {/* <li>
+                      <a href="#">Women</a>
+                    </li> */}
+                    {/* <li>
+                      <a href="#">Sale</a>
+                    </li> */}
                     <li>
                       <a href="#">Products</a>
                     </li>
@@ -98,9 +98,9 @@ const Footer = () => {
                     <li>
                       <a href="#">New Arrivals</a>
                     </li>
-                    <li>
-                      {/* <a href="#">Collections</a> */}
-                    </li>
+                    {/* <li>
+                      <a href="#">Collections</a>
+                    </li> */}
                     <li>
                       <a href="#">About Us</a>
                     </li>
