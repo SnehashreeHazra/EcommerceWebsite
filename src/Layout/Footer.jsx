@@ -84,10 +84,10 @@ const Footer = () => {
                       <a href="#">Home</a>
                     </li>
                     <li>
-                      <a href="#">Women</a>
+                      {/* <a href="#">Women</a> */}
                     </li>
                     <li>
-                      <a href="#">Sale</a>
+                      {/* <a href="#">Sale</a> */}
                     </li>
                     <li>
                       <a href="#">Products</a>
