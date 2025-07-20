@@ -41,10 +41,7 @@ const ArrivalProduct = () => {
             }}
             className="spotlight_img_div"
           >
-            <img
-              src={index === i && hover ? e.img2 : e.img1}
-              alt=""
-            />
+            <img src={index === i && hover ? e.img2 : e.img1} alt="" />
           </div>
           <div className="spotlight_product_details">
             <h5>Blue Saree</h5>
