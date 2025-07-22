@@ -17,7 +17,6 @@
   filter: blur(3px);
   z-index: 0;
 }
-
 .register-content {
   position: relative;
   z-index: 1;
