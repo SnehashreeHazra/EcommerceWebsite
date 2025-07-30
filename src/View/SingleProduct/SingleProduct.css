@@ -154,7 +154,6 @@
   transition: 0.2s linear all;
   cursor: pointer;
 }
-
 .single_product_size_active {
   background-color: black;
   color: white;
