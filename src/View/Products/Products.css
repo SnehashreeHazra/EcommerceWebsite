@@ -89,7 +89,6 @@
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
 .sortby-menu li:hover {
   background-color: #f2f2f2;
 }
