@@ -8,7 +8,7 @@ This project focuses on providing a clean, user-friendly shopping experience wit
 ## 🚀 Tech Stack
 - **React.js** – Frontend framework  
 - **Vite** – Fast build tool for React  
-- **CSS / Tailwind CSS** (if you used it) – For styling  
+- **CSS – For styling  
 - **React Router** – For page navigation (if applicable)  
 
 ---
