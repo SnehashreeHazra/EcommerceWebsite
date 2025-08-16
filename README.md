@@ -42,14 +42,18 @@ saree-website/
    git clone https://github.com/SnehashreeHazra/EcommerceWebsite.git
    
 2. Navigate into the project directory:
+```
 cd saree-website
-
-3. Install dependencies:
+```
+4. Install dependencies:
+```
 npm install
+```
 
-4. Run the server:
+6. Run the server:
+```
 npm run dev
-
+```
 
 ## Contributing
 
