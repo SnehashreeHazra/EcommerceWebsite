@@ -15,7 +15,7 @@ This project focuses on providing a clean, user-friendly shopping experience wit
 
 ## 📌 Features
 - 🛍️ Beautiful saree product listings  
-- 🔍 Search and filter options (if you added)  
+- 🔍 Search and filter options   
 - 📱 Fully responsive design for mobile, tablet, and desktop  
 - 🛒 Add to Cart functionality (if you included)  
 - 🎨 Elegant and modern UI  
@@ -39,7 +39,7 @@ saree-website/
 ## 🖥️ Installation & Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/saree-website.git
+   git clone https://github.com/SnehashreeHazra/saree-website.git
 ## Navigate into the project folder
 cd saree-website
 ## Install dependencies
