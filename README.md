@@ -39,7 +39,7 @@ saree-website/
 ## 🖥️ Installation & Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SnehashreeHazra/saree-website.git
+   git clone https://github.com/SnehashreeHazra/EcommerceWebsite.git
 ## Navigate into the project folder
 cd saree-website
 ## Install dependencies
