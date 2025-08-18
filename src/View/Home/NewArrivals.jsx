@@ -10,9 +10,12 @@ const NewArrivals = forwardRef((props, ref) => {
           <h1>NEW ARRIVALS</h1>
           <span className="line_through"></span>
         </div>
-        <div className="spotlight_products_wrapper">
+        {/* <div className="spotlight_products_wrapper">
           <ArrivalProduct />
-        </div>
+        </div> */}
+        <div style={{ fontSize: "32px", textAlign: "center" }}>
+            No New Arrivals
+          </div>
       </div>
     </div>
   );

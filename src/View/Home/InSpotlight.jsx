@@ -11,17 +11,20 @@ const InSpotlight = ({ realatedProducts }) => {
           <h1>FEATURED PRODUCTS</h1>
           <span className="line_through"></span>
         </div>
-        <div className="spotlight_products_wrapper">
+        <div style={{ fontSize: "20px", textAlign: "center" }}>
+            No Featured Product Found
+          </div>
+        {/* <div className="spotlight_products_wrapper">
           <SpotlightCard realatedProducts={true} />
-        </div>
-        {!realatedProducts && (
+        </div> */}
+        {/* {!realatedProducts && (
           <div
             className="view_all_button"
             onClick={() => navigate("/products")}
           >
             View All
           </div>
-        )}
+        )} */}
       </div>
     </>
   );
