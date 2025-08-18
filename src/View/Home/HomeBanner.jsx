@@ -1,18 +1,14 @@
 import React from "react";
 import "./Home.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import img1 from "../../assets/259c5fac-0bf8-4687-8b45-1c124d1153b5.webp"
-import img2 from "../../assets/shared102_1800x.webp"
-import img3 from "../../assets/5_desktop_1800x.webp"
+import img1 from "../../assets/259c5fac-0bf8-4687-8b45-1c124d1153b5.webp";
+import img2 from "../../assets/shared102_1800x.webp";
+import img3 from "../../assets/5_desktop_1800x.webp";
 import { Carousel } from "react-responsive-carousel";
 
 import img from "../../assets/259c5fac-0bf8-4687-8b45-1c124d1153b5.webp";
 const HomeBanner = () => {
-  const banners = [
-  { image: img1 },
-  { image: img2 },
-  { image: img3 },
-];
+  const banners = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
       <div className="home_banner">
