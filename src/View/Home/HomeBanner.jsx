@@ -18,8 +18,9 @@ const HomeBanner = () => {
           infiniteLoop
           showThumbs={false}
           showStatus={false}
-          interval={5000}
+          interval={3000}
           showArrows={false}
+          stopOnHover={false}
         >
           {banners.map((e, i) => (
             <div key={i}>
