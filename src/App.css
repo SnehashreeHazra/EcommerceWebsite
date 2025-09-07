@@ -343,7 +343,6 @@ ul {
   transition: 0.2s linear all;
   opacity: 1;
 }
-
 .dropdown_item {
   padding: 10px 20px;
   display: flex;
