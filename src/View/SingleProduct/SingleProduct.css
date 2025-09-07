@@ -489,6 +489,8 @@
   font-size: 13px;
   font-weight: 600;
 }
+
+
 @media (max-width: 999px) {
   .single_product_wrapper {
     flex-direction: column;
