@@ -373,6 +373,7 @@ ul {
 .fa-bars-staggered {
   display: none;
 }
+
 @media (max-width: 1199px) {
   .fa-bars-staggered {
     display: block;
