@@ -24,7 +24,6 @@ p {
 html {
   scroll-padding-top: 80px; /* Adjust according to your header height */
 }
-
 .universal_container {
   width: 90%;
   margin-inline: auto;
