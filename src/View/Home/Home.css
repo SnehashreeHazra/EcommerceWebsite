@@ -60,7 +60,6 @@
   transition: 0.2s linear all;
   overflow: hidden;
 }
-
 .banner_button_wrapper button:nth-child(1) {
   background-color: white;
   color: black;
