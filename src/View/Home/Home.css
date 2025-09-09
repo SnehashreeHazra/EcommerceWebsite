@@ -92,15 +92,6 @@
   z-index: 999;
 }
 
-/* .home_categories_wrapper h1::after{
-    position: absolute;
-    content: '';
-    width: 10%;
-    height: 2px;
-    top: 15px;
-    left: 0;
-    background-color: rgb(121, 121, 121);
-} */
 .home_categories_wrapper {
   padding: 70px 0px;
   overflow: hidden;
