@@ -212,7 +212,6 @@
   transition: 0.2s linear all;
   cursor: pointer;
 }
-
 .view_all_button:hover {
   background-color: black;
   color: white;
