@@ -184,7 +184,6 @@
 @media (max-width: 1230px) {
   .product01 {
     flex-wrap: wrap;
-    /* row-gap: 20px; */
   }
   .product01-content2 {
     display: flex;
