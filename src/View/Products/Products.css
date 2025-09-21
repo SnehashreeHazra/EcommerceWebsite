@@ -28,7 +28,6 @@
   align-items: center;
 }
 .filter-products input[type="range"] {
-  /* width: 100%; */
   margin-top: 8px;
   cursor: pointer;
   height: 2px;
