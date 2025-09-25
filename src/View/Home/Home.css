@@ -300,7 +300,6 @@
   font-weight: 500;
 }
 .testimonial_cards_wrapper {
-  display: flex;
     justify-content: space-between;
     align-items: center;
   margin-inline: auto;
