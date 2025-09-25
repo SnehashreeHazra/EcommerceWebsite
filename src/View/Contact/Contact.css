@@ -41,7 +41,6 @@
 }
 .contact_info_order {
   display: flex;
-  /* column-gap: 10px; */
   justify-content: space-between;
 }
 .contact_info_div {
