@@ -70,29 +70,7 @@ const FilterProducts = () => {
       </div>
 
       
-      {/* <div className="category">
-        <h5>Color</h5>
-        <div className="category-div">
-          <input type="checkbox" id="red" />
-          <label htmlFor="red">Red</label>
-        </div>
-        <div className="category-div">
-          <input type="checkbox" id="blue" />
-          <label htmlFor="blue">Blue</label>
-        </div>
-        <div className="category-div">
-          <input type="checkbox" id="green" />
-          <label htmlFor="green">Green</label>
-        </div>
-        <div className="category-div">
-          <input type="checkbox" id="yellow" />
-          <label htmlFor="yellow">Yellow</label>
-        </div>
-        <div className="category-div">
-          <input type="checkbox" id="black" />
-          <label htmlFor="black">Black</label>
-        </div>
-      </div> */}
+      
 
       {/* Fabric Filter */}
       <div className="category">
