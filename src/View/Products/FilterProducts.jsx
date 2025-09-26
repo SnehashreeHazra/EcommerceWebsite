@@ -69,7 +69,7 @@ const FilterProducts = () => {
         </div>
       </div>
 
-      {/* Color Filter */}
+      
       {/* <div className="category">
         <h5>Color</h5>
         <div className="category-div">
