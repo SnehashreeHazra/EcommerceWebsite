@@ -84,13 +84,7 @@ const Profile = () => {
               </p>
             </div>
 
-            <div className="personal-information-div">
-              <div className="personal-info1">
-                <p>Payment Method</p>{" "}
-                <i className="fa-regular fa-credit-card"></i>
-              </div>
-              <p className="personal-info2">Visa **** 1234</p>
-            </div>
+            
 
             {/* <div className="personal-information-div">
               <div className="personal-info1">
