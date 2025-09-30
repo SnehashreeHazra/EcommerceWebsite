@@ -83,10 +83,6 @@ const Profile = () => {
                 123, MG Road, Delhi, India - 110001
               </p>
             </div>
-
-            
-
-            
           </div>
         </div>
       </div>
