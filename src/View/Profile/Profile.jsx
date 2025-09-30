@@ -86,12 +86,7 @@ const Profile = () => {
 
             
 
-            <div className="personal-information-div">
-              <div className="personal-info1">
-                <p>Gender</p> <i className="fa-solid fa-venus-mars"></i>
-              </div>
-              <p className="personal-info2">Female</p>
-            </div>
+            
           </div>
         </div>
       </div>
