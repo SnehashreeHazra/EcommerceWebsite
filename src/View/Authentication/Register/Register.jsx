@@ -29,7 +29,6 @@ const Register = () => {
                     placeholder="Enter your name"
                     required
                   />
-                  
                 </div>
               </div>
               <div className="form-group icon-input">
