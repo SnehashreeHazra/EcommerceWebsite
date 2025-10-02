@@ -29,7 +29,7 @@ const Register = () => {
                     placeholder="Enter your name"
                     required
                   />
-                  {/* <i className="fas fa-envelope icon"></i> */}
+                  <i className="fas fa-envelope icon"></i>
                 </div>
               </div>
               <div className="form-group icon-input">
