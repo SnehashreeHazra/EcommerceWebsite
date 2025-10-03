@@ -40,7 +40,6 @@ const Header = () => {
           </div>
           <div className="nav_link_div">
             <div className="nav_dropown_wrapper ">
-              
               <div className="dropdown_div_nav women_dropdown">
                 <div
                   className="dropdown_item"
