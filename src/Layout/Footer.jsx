@@ -50,9 +50,9 @@ const Footer = () => {
             <div class="row">
               <div class="col-xl-4 col-lg-4 mb-50">
                 <div class="footer-widget">
-                  {/* <div class="footer-logo">
+                  <div class="footer-logo">
                                 <a ><img src={logo} class="img-fluid" alt="logo"/></a>
-                            </div> */}
+                            </div>
                   <div class="footer-text">
                     <p>
                       Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
