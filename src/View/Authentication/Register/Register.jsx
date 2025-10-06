@@ -78,7 +78,6 @@ const Register = () => {
               </button>
 
               {/* Forgot Password Link */}
-              
 
               <div className="divider">
                 <span>Or continue with</span>
