@@ -78,9 +78,9 @@ const Register = () => {
               </button>
 
               {/* Forgot Password Link */}
-              {/* <div className="forgot-password">
+              <div className="forgot-password">
                 <NavLink to="/forgot-password">Forgot Password?</NavLink>
-              </div> */}
+              </div>
 
               <div className="divider">
                 <span>Or continue with</span>
